@@ -61,7 +61,7 @@ const PhoneInput = (props) => {
 
     const valueValidation = validate.map((data) => {
       if (data === 'phoneNumber') {
-        return phoneNumber(target.value);
+        return phoneNumber(title, target.value);
       }
     });
     (valueValidation || []).length > 0 && dispatch(setError(true));
