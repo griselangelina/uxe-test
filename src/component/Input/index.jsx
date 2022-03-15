@@ -58,15 +58,15 @@ const TextInput = (props) => {
     const valueValidation = validate.map((data) => {
       if(target.value.length > 0){
       if (data === 'maxLength') {
-        return lengthValidation(target.value, maxLength);
+        return lengthValidation(title, target.value, maxLength);
       }
 
       if (data === 'passwordFormat') {
-        return passwordFormat(target.value);
+        return passwordFormat(title, target.value);
       }
 
       if (data === 'lengthBetween') {
-        return lengthBetween(target.value, 8, 16);
+        return lengthBetween(title, target.value, 8, 16);
       }
       return true;
     }
