@@ -1,0 +1,31 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #325050;
+  border-radius: 12px;
+  background: #ffff;
+  box-shadow: 0px 8px 16px rgba(50, 80, 80, 0.15) !important;
+
+  .card-header {
+    .banner-content {
+      height: 158px;
+      background-position: center top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 12px 12px 0 0;
+    }
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+
+    &.padding-medium {
+        padding: 16px;
+      }
+
+      &.padding-small {
+        padding: 12px;
+      }
+  }
+}

@@ -1,0 +1,14 @@
+.label {
+  border-radius: 40px;
+  padding: 3px 8px;
+  color: white;
+  display: inline-block;
+
+  &.regular {
+    background: #325050;
+  }
+
+  &.alert {
+    background: #ed4340;
+  }
+}

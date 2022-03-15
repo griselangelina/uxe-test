@@ -1,0 +1,48 @@
+.button {
+  background: #143232;
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  width: 100%;
+
+  &.ghost {
+    background: none;
+    border-radius: 12px;
+    border: 1px solid #143232;
+    outline-offset: 4px;
+
+    .content {
+      margin-left: -1px;
+      margin-right: -1px;
+      display: block;
+      padding: 15px 16px 17px 16px;
+      border: 1px solid #143232;
+      border-radius: 12px;
+      font-size: 14px;
+      background: #ffff;
+      color: #143232;
+      transform: translateY(-8px);
+    }
+  }
+
+  &:not(.ghost) {
+    &:active {
+      .content {
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+.content {
+  display: block;
+  padding: 15px 16px 17px 16px;
+  border: 1px solid #143232;
+  border-radius: 12px;
+  font-size: 14px;
+  background: #325050;
+  color: white;
+  transform: translateY(-8px);
+}

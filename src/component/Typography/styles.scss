@@ -1,0 +1,35 @@
+@import '../../styles/mixins';
+
+.input-font {
+  &.activity {
+    color: #325050;
+  }
+
+  &.alert {
+    color: #ed4340;
+  }
+
+  &.low-emphasis {
+    color: #a2b0b0;
+  }
+
+  &.high-emphasis {
+    color: #325050;
+  }
+
+  &.bold {
+    @include fontBold;
+  }
+
+  &.medium {
+    @include fontMedium;
+  }
+
+  &.strikethrough {
+    text-decoration: line-through;
+  }
+
+  &.small {
+    font-size: 9px;
+  }
+}

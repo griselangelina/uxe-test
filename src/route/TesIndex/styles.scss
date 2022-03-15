@@ -1,0 +1,120 @@
+.tes-index {
+  display: flex;
+  flex-direction: column;
+
+  & > div {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .banner {
+    padding: 0;
+
+    .card-description {
+      & > div {
+        &:not(:last-child) {
+          margin-bottom: 12px;
+        }
+      }
+
+      .input-font {
+        & > span {
+          &:not(:last-child) {
+            padding-right: 4px;
+          }
+        }
+      }
+    }
+    .card-detail {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      & > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        & > img {
+          width: 24px;
+          height: 24px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  .banner,
+  .form {
+    width: 100%;
+
+    .input-forms {
+      &:not(:last-child){
+        margin-bottom: 20px;
+      }
+    }
+
+    .btn-section {
+      position: fixed;
+      bottom:0;
+      width: calc(100% - 32px);
+    }
+  }
+
+  .toast {
+    width: calc(100% - 32px);
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  /* For tablets: */
+  .tes-index {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    & > div {
+      &:not(:last-child) {
+        margin-right: 36px;
+      }
+    }
+
+    .banner {
+      width: 65%;
+      padding: 0;
+
+      .card {
+        margin: auto;
+        transform: translateY(15%);
+      }
+    }
+
+    .form {
+      width: 35%;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25) !important;
+      background-color: #ffffff;
+      padding: 24px;
+      border-radius: 16px;
+
+      .btn-section {
+        position: relative;
+        bottom:0;
+        width: 100%;
+        margin-top: 32px;
+      }
+
+      .input-forms {
+        &:not(:last-child){
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .toast {
+      width: calc(100% - 32px);
+      right: 20px;
+      top:-30px;
+    }
+  }
+}
